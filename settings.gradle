@@ -1,0 +1,2 @@
+include ':app', ':dynamicgrids'
+project(':dynamicgrids').projectDir = new File('dynamicgrid')

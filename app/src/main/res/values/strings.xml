@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">beautigrid</string>
+    <integer-array name="random_imgs">
+        <item>@drawable/ic_ms_transport</item>
+        <item>@drawable/ic_ms_pizza</item>
+        <item>@drawable/ic_ms_entertainment</item>
+        <item>@drawable/ic_ms_car</item>
+    </integer-array>
+</resources>
