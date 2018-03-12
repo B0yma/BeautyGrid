@@ -21,3 +21,6 @@ android {
         }
     }
 }
+dependencies {
+    compile project(path: ':app')
+}

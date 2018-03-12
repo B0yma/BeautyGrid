@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import org.askerov.dynamicgrid.BaseDynamicGridAdapter;
+import org.askerov.dynamicgrid.MyObj;
 
 import java.util.List;
 import java.util.Random;
@@ -27,7 +28,7 @@ import java.util.Random;
 public class CheeseDynamicAdapter extends BaseDynamicGridAdapter {
     private TypedArray imgs;
 
-    public CheeseDynamicAdapter(Context context, List<?> items, int columnCount) {
+    public CheeseDynamicAdapter(Context context, List<MyObj> items, int columnCount) {
         super(context, items, columnCount);
         this.imgs = imgs;
     }
