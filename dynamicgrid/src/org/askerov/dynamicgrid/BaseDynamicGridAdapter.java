@@ -13,7 +13,7 @@ import java.util.List;
 public abstract class BaseDynamicGridAdapter extends AbstractDynamicGridAdapter {
     private Context mContext;
 
-    private ArrayList<Object> mItems = new ArrayList<Object>();
+    private ArrayList<MyObj> mItems = new ArrayList<MyObj>();
     private int mColumnCount;
 
     protected BaseDynamicGridAdapter(Context context, int columnCount) {
@@ -21,19 +21,19 @@ public abstract class BaseDynamicGridAdapter extends AbstractDynamicGridAdapter 
         this.mColumnCount = columnCount;
     }
 
-    public BaseDynamicGridAdapter(Context context, List<?> items, int columnCount) {
+    public BaseDynamicGridAdapter(Context context, List<MyObj> items, int columnCount) {
         mContext = context;
         mColumnCount = columnCount;
         init(items);
     }
 
-    private void init(List<?> items) {
+    private void init(List<MyObj> items) {
         addAllStableId(items);
         this.mItems.addAll(items);
     }
 
 
-    public void set(List<?> items) {
+    public void set(List<MyObj> items) {
         clear();
         init(items);
         notifyDataSetChanged();
@@ -45,26 +45,26 @@ public abstract class BaseDynamicGridAdapter extends AbstractDynamicGridAdapter 
         notifyDataSetChanged();
     }
 
-    public void add(Object item) {
+    public void add(MyObj item) {
         addStableId(item);
         mItems.add(item);
         notifyDataSetChanged();
     }
 
-    public void add(int position, Object item) {
+    public void add(int position, MyObj item) {
         addStableId(item);
         mItems.add(position, item);
         notifyDataSetChanged();
     }
 
-    public void add(List<?> items) {
+    public void add(List<MyObj> items) {
         addAllStableId(items);
         this.mItems.addAll(items);
         notifyDataSetChanged();
     }
 
 
-    public void remove(Object item) {
+    public void remove(MyObj item) {
         mItems.remove(item);
         removeStableID(item);
         notifyDataSetChanged();
@@ -77,7 +77,7 @@ public abstract class BaseDynamicGridAdapter extends AbstractDynamicGridAdapter 
     }
 
     @Override
-    public Object getItem(int position) {
+    public MyObj getItem(int position) {
         return mItems.get(position);
     }
 
@@ -104,7 +104,7 @@ public abstract class BaseDynamicGridAdapter extends AbstractDynamicGridAdapter 
         return true;
     }
 
-    public List<Object> getItems() {
+    public List<MyObj> getItems() {
         return mItems;
     }
 

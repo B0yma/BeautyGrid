@@ -12,8 +12,6 @@ import org.askerov.dynamicgrid.DynamicGridView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,12 +23,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_grid);
         gridView = (DynamicGridView) findViewById(R.id.dynamic_grid);
 
-        String[] ss = {"browser","book","cash","city","credit"};
+        //String[] ss = {"browser","book","cash","city","credit"};
+        ArrayList<org.askerov.dynamicgrid.MyObj> al = new ArrayList<>();
+        al.add(new org.askerov.dynamicgrid.MyObj(1,"browser",null));
+        al.add(new org.askerov.dynamicgrid.MyObj(1,"book",null));
+        al.add(new org.askerov.dynamicgrid.MyObj(1,"cash",null));
+        al.add(new org.askerov.dynamicgrid.MyObj(1,"city",null));
+        al.add(new org.askerov.dynamicgrid.MyObj(1,"credit",null));
 
-        final TypedArray imgs = getResources().obtainTypedArray(R.array.random_imgs);
+        //final TypedArray imgs = getResources().obtainTypedArray(R.array.random_imgs);
 
         gridView.setAdapter(new CheeseDynamicAdapter(this,
-                new ArrayList<String>(Arrays.asList(ss)),
+                //new ArrayList<MyObj>(Arrays.asList(ss)),
+                al,
                 3));
 //        add callback to stop edit mode if needed
         gridView.setOnDropListener(new DynamicGridView.OnDropListener()
