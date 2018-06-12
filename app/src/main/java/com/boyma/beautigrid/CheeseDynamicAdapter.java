@@ -15,8 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.askerov.dynamicgrid.*;
-import org.askerov.dynamicgrid.MyObj;
+import com.boyma.beautigrid.dynamicgrid.BaseDynamicGridAdapter;
 
 import java.util.List;
 import java.util.Random;

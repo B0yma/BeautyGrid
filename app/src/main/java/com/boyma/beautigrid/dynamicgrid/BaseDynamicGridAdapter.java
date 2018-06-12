@@ -1,6 +1,8 @@
-package org.askerov.dynamicgrid;
+package com.boyma.beautigrid.dynamicgrid;
 
 import android.content.Context;
+
+import com.boyma.beautigrid.MyObj;
 
 import java.util.ArrayList;
 import java.util.List;

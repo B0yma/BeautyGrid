@@ -1,4 +1,4 @@
-package org.askerov.dynamicgrid;
+package com.boyma.beautigrid.dynamicgrid;
 
 import android.animation.*;
 import android.annotation.TargetApi;
@@ -20,6 +20,8 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListAdapter;
+
+import com.boyma.beautigrid.R;
 
 import java.util.*;
 
@@ -771,7 +773,7 @@ public class DynamicGridView extends GridView {
     }
 
     /**
-     * A {@link org.askerov.dynamicgrid.DynamicGridView.SwitchCellAnimator} for versions KitKat and below.
+     * A {@link DynamicGridView.SwitchCellAnimator} for versions KitKat and below.
      */
     private class KitKatSwitchCellAnimator implements SwitchCellAnimator {
 
@@ -822,7 +824,7 @@ public class DynamicGridView extends GridView {
     }
 
     /**
-     * A {@link org.askerov.dynamicgrid.DynamicGridView.SwitchCellAnimator} for versions L and above.
+     * A {@link DynamicGridView.SwitchCellAnimator} for versions L and above.
      */
     private class LSwitchCellAnimator implements SwitchCellAnimator {
 

@@ -1,4 +1,4 @@
-package org.askerov.dynamicgrid;
+package com.boyma.beautigrid.dynamicgrid;
 
 import android.view.View;
 

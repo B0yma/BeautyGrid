@@ -1,4 +1,4 @@
-package org.askerov.dynamicgrid;
+package com.boyma.beautigrid.dynamicgrid;
 
 import android.widget.BaseAdapter;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 
 /**
- * Abstract adapter for {@link org.askerov.dynamicgrid.DynamicGridView} with sable items id;
+ * Abstract adapter for {@link DynamicGridView} with sable items id;
  */
 
 public abstract class AbstractDynamicGridAdapter extends BaseAdapter implements DynamicGridAdapterInterface {

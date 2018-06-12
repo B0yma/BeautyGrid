@@ -1,6 +1,5 @@
 package com.boyma.beautigrid;
 
-import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,10 +7,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
-import org.askerov.dynamicgrid.DynamicGridView;
+import com.boyma.beautigrid.dynamicgrid.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         gridView = (DynamicGridView) findViewById(R.id.dynamic_grid);
 
         //String[] ss = {"browser","book","cash","city","credit"};
-        ArrayList<org.askerov.dynamicgrid.MyObj> al = new ArrayList<>();
-        al.add(new org.askerov.dynamicgrid.MyObj(1,"browser",null));
-        al.add(new org.askerov.dynamicgrid.MyObj(1,"book",null));
-        al.add(new org.askerov.dynamicgrid.MyObj(1,"cash",null));
-        al.add(new org.askerov.dynamicgrid.MyObj(1,"city",null));
-        al.add(new org.askerov.dynamicgrid.MyObj(1,"credit",null));
+        ArrayList<MyObj> al = new ArrayList<>();
+        al.add(new MyObj(1,"browser",null));
+        al.add(new MyObj(1,"book",null));
+        al.add(new MyObj(1,"cash",null));
+        al.add(new MyObj(1,"city",null));
+        al.add(new MyObj(1,"credit",null));
 
         //final TypedArray imgs = getResources().obtainTypedArray(R.array.random_imgs);
 
